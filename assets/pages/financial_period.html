@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
   <title>JewelBox | Forgot Password</title>
   <!-- jQuery min -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -51,26 +52,26 @@
          <!-- Right side Box / Form Inputs -->
          <div class="col-md-7 mt-0 mb-4">
           <div>
-            <h1 class="headtitle mb-0">Finacial Password Expired</h1>
-            <p class="servicetitle mb-0">your finacial period password expired or not available. please change it.</p>
+            <!-- <h1 class="headtitle mb-0">Finacial Password Expired</h1> -->
+            <p class="servicetitle mb-0">Your Finacial Period Expired or Not Available.</p>
           </div>
           <form action="#" method="post" name="login-form" autocomplete="off" class="row g-3 me-lg-5 mt-4">
             <div class="form-floating">
               <span class="has-float-label">
                 <input type="text" name="date" class="form-control custom-input input-group date" id="startdate"
                   placeholder="dd / mm / yyyy" data-date-format="dd / mm / yyyy">
-                <label for="startdate"><i></i><i class="bi bi-calendar2-range-fill"></i> Start Date: dd / mm / yyyy</label>
+                <label for="startdate"><i></i><i class="bi bi-calendar2-range-fill"></i> dd / mm / yyyy</label>
               </span>
             </div>
             <div class="form-floating">
               <span class="has-float-label">
                 <input type="text" name="date" class="form-control custom-input input-group date" id="enddate"
                   placeholder="dd / mm / yyyy" data-date-format="dd / mm / yyyy">
-                <label for="enddate"><i></i><i class="bi bi-calendar2-range-fill"></i> Start Date: dd / mm / yyyy</label>
+                <label for="enddate"><i></i><i class="bi bi-calendar2-range-fill"></i> dd / mm / yyyy</label>
               </span>
             </div>
             <div class="d-grid mt-0 w-25">
-              <button class="btn loginbtn w-md-50"><a href="./resetpassword_2.html" class="link-dark text-decoration-none">Submit</a></button>
+              <button class="btn loginbtn w-md-50"><a href="./resetpassword_2.html" class="link-dark text-decoration-none">Set</a></button>
             </div>
           </form>
         </div>
