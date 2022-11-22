@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+$primary: #F8B866;
+$secondary: #FDA085;
+$red: #F53B57;
+$black: #141414;
+$white: #FFFFFF;
+$bgc: #303030;
+$light: #818181;
+$border_1: #aab2bb;
+$border_2: #E4E4E4;
+$borderBg: #F8F8F8;
+$blue: #0091FF;
+$font-family: 'Roboto', sans-serif;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    font-weight: 400;
+    color: $light;
+    background-color: $primary;
+    // background: linear-gradient(to right bottom, $primary, $secondary);
+}
+
+.bg-white, .bg-dark {
+    box-shadow: 0 2px 14px 0 rgba($black, .5);
+}
+
+
+.headtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+}
+
+.servicetitle {
+    font-size: 16px;
+    // font-weight: 400;
+    color: $black;
+}
+
+b.text-color {
+    color: $red;
+}
+
+a.forgotpwdlink {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: $blue;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+        color: darken($blue, 10%);
+    }
+}
+
+a.submitbtnlink{
+    text-decoration: none;
+    color: $black;
+}
+
+a.loginbtn{
+    text-decoration: none;
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 14px;
+    margin-top: 0;
+    font-size: 16px;
+    color: $border_1;
+    .form-control {
+        width: 100%;
+        margin-right: 0;
+        border: 1px solid $border_2;
+        border-radius: 4px;
+        &:active, &:focus {
+            outline: none;
+            box-shadow: none;
+            background: $white;
+            }
+    }
+}
+
+.form-floating>.form-control {
+    height: calc(3.5rem + -4px);
+}
+
+.loginbtn {
+    background-color: $primary;
+    border-color: $primary;
+    color: $black;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0 10px 15px -14px rgba($black, .5);
+    transition: all .2s ease-in-out;
+    border-radius: 4px;
+    &:hover, &:focus {
+            background-color: darken($primary, 10%);
+            color: $black !important;
+            border-color: $primary !important;
+        }
+        &:active {
+            background-color: darken($primary, 10%) !important;
+            color: $black !important;
+            border-color: $primary;
+        }
+}
+
+
+
+/* for chrome, Safari, Edge, Opera*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* for firefox*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="date"]{
+    color: $border_1;
+}
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+
+input#date {
+    display: inline-block;
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+
+/*bootstrap-float-label*/
+.has-float-label{
+	display:block;
+	position:relative;
+	width:100%;
+}
+.has-float-label label,.has-float-label>span{
+	position:absolute;
+	cursor:text;
+	font-size:75%;
+	opacity:1;
+	-webkit-transition:all .2s;
+	transition:all .2s;
+	top:-.5em;
+	left:.75rem;
+	z-index:3;
+	line-height:1;
+	padding:0 3px;
+	background:#fff;
+	font-weight:normal;
+}
+.has-float-label>span{/*For select2-bootstrap dropdown set top,left margin 0*/
+	top:0;
+	left:0;
+}
+.has-float-label label::after,.has-float-label>span::after{
+	content:" ";
+	display:block;
+	position:absolute;
+	background:#fff;
+	height:2px;
+	top:50%;
+	left:-.2em;
+	right:-.2em;
+	z-index:-1;
+}
+.has-float-label .form-control::-webkit-input-placeholder{
+	opacity:1;
+	-webkit-transition:all .2s;
+	transition:all .2s;
+}
+.has-float-label .form-control::-moz-placeholder{
+	opacity:1;
+	transition:all .2s;
+}
+.has-float-label .form-control:-ms-input-placeholder{
+	opacity:1;
+	transition:all .2s;
+}
+.has-float-label .form-control::placeholder{
+	opacity:1;
+	-webkit-transition:all .2s;
+	transition:all .2s;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::-webkit-input-placeholder{
+	opacity:0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::-moz-placeholder{
+	opacity:0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus):-ms-input-placeholder{
+	opacity:0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::placeholder{
+	opacity:0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)+*{
+	font-size:100%;
+	opacity: 1;
+	top:.3em;
+}
+.input-group .has-float-label{
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+	margin-bottom:0;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus) + * {
+	margin-top: 6px;
+}
+
+/*password_show & hide*/
+.ptxt {
+	color: $light;
+	float: right !important;
+	font-size: 14px !important;
+	left: auto !important;
+	background: transparent !important;
+	position: absolute;
+	cursor: pointer !important;
+	top: 30% !important;
+	right: 15px;
+}
+
+
+#btn1, #btn2, #datepicker>span:hover {
+    cursor: pointer;
+}
+
+.datepicker .prev,
+.datepicker .next {
+    font-size: 20px !important;
+    line-height: 12px !important;
+    vertical-align: top;
+}
+
+
+
+

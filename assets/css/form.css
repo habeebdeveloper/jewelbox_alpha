@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #818181;
+  background-color: #F8B866;
+}
+
+.bg-white, .bg-dark {
+  box-shadow: 0 2px 14px 0 rgba(20, 20, 20, 0.5);
+}
+
+.headtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #141414;
+}
+
+.servicetitle {
+  font-size: 16px;
+  color: #141414;
+}
+
+b.text-color {
+  color: #F53B57;
+}
+
+a.forgotpwdlink {
+  transition: all 0.2s ease-in-out;
+  color: #0091FF;
+  font-weight: 500;
+  text-decoration: none;
+}
+a.forgotpwdlink:hover {
+  color: #0074cc;
+}
+
+a.submitbtnlink {
+  text-decoration: none;
+  color: #141414;
+}
+
+a.loginbtn {
+  text-decoration: none;
+}
+
+.form-floating {
+  position: relative;
+  margin-bottom: 14px;
+  margin-top: 0;
+  font-size: 16px;
+  color: #aab2bb;
+}
+.form-floating .form-control {
+  width: 100%;
+  margin-right: 0;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+}
+.form-floating .form-control:active, .form-floating .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  background: #FFFFFF;
+}
+
+.form-floating > .form-control {
+  height: calc(3.5rem - 4px);
+}
+
+.loginbtn {
+  background-color: #F8B866;
+  border-color: #F8B866;
+  color: #141414;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 10px 15px -14px rgba(20, 20, 20, 0.5);
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.loginbtn:hover, .loginbtn:focus {
+  background-color: #f6a135;
+  color: #141414 !important;
+  border-color: #F8B866 !important;
+}
+.loginbtn:active {
+  background-color: #f6a135 !important;
+  color: #141414 !important;
+  border-color: #F8B866;
+}
+
+/* for chrome, Safari, Edge, Opera*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* for firefox*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=date] {
+  color: #aab2bb;
+}
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+input#date {
+  display: inline-block;
+  position: relative;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+/*bootstrap-float-label*/
+.has-float-label {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.has-float-label label, .has-float-label > span {
+  position: absolute;
+  cursor: text;
+  font-size: 75%;
+  opacity: 1;
+  transition: all 0.2s;
+  top: -0.5em;
+  left: 0.75rem;
+  z-index: 3;
+  line-height: 1;
+  padding: 0 3px;
+  background: #fff;
+  font-weight: normal;
+}
+
+.has-float-label > span { /*For select2-bootstrap dropdown set top,left margin 0*/
+  top: 0;
+  left: 0;
+}
+
+.has-float-label label::after, .has-float-label > span::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  top: 50%;
+  left: -0.2em;
+  right: -0.2em;
+  z-index: -1;
+}
+
+.has-float-label .form-control::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.has-float-label .form-control:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.has-float-label .form-control::placeholder {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.has-float-label .form-control:-moz-placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:-ms-input-placeholder:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:-moz-placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:-ms-input-placeholder:not(:focus)::placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+
+.has-float-label .form-control:-moz-placeholder-shown:not(:focus) + * {
+  font-size: 100%;
+  opacity: 1;
+  top: 0.3em;
+}
+
+.has-float-label .form-control:-ms-input-placeholder:not(:focus) + * {
+  font-size: 100%;
+  opacity: 1;
+  top: 0.3em;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus) + * {
+  font-size: 100%;
+  opacity: 1;
+  top: 0.3em;
+}
+
+.input-group .has-float-label {
+  flex-grow: 1;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.has-float-label .form-control:-moz-placeholder-shown:not(:focus) + * {
+  margin-top: 6px;
+}
+
+.has-float-label .form-control:-ms-input-placeholder:not(:focus) + * {
+  margin-top: 6px;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus) + * {
+  margin-top: 6px;
+}
+
+/*password_show & hide*/
+.ptxt {
+  color: #818181;
+  float: right !important;
+  font-size: 14px !important;
+  left: auto !important;
+  background: transparent !important;
+  position: absolute;
+  cursor: pointer !important;
+  top: 30% !important;
+  right: 15px;
+}
+
+#btn1, #btn2, #datepicker > span:hover {
+  cursor: pointer;
+}
+
+.datepicker .prev,
+.datepicker .next {
+  font-size: 20px !important;
+  line-height: 12px !important;
+  vertical-align: top;
+}/*# sourceMappingURL=form.css.map */
