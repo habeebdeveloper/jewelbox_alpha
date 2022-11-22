@@ -1,19 +1,19 @@
 .datepicker-days table thead tr th {
-    background: #F8B866;
+    background: #F53B57;
     border-radius: 0;
     color: #141414;
     padding: 5px !important;
 }
 
 .datepicker-months table thead tr th {
-    background: #F8B866;
+    background: #F53B57;
     border-radius: 0;
     color: #141414;
     padding: 5px !important;
 }
 
 .datepicker-years table thead tr th {
-    background: #F8B866;
+    background: #F53B57;
     border-radius: 0;
     color: #141414;
     padding: 5px !important;
@@ -255,7 +255,7 @@
 }
 
 .active.day>div {
-    background: #F8B866;
+    background: #F53B57;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -570,7 +570,7 @@
 }
 
 .datepicker table tr td span:hover {
-    background: #EC2029;
+    background: #F53B57;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -581,7 +581,7 @@
 }
 
 .datepicker table tr td div:hover {
-    background: #EC2029;
+    background: #F53B57;
     border-radius: 50%;
     width: 30px;
     height: 30px;
