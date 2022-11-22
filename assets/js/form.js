@@ -16,40 +16,36 @@ function openFullscreen() {
 
 // password show & hide
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.pass_show').append('<span class="ptxt">show</span>');
 });
-$(document).on('click','.pass_show .ptxt', function(){ 
+$(document).on('click', '.pass_show .ptxt', function () {
   $(this).text($(this).text() == "show" ? "hide" : "show");
-	$(this).prev().prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; });
+  $(this).prev().prev().attr('type', function (index, attr) { return attr == 'password' ? 'text' : 'password'; });
 });
 
 // datepicker
-$(function () {
-  $("#datepicker").datepicker({ 
-        autoclose: true, 
-        todayHighlight: true
-  }).datepicker('update', new Date());;
-});
 
-
-
-$(document).ready(function(){
+$(document).ready(function () {
+  $("#datepicker").datepicker({
+    autoclose: true,
+    todayHighlight: true
+  }).datepicker('update', new Date());
 
   $("#startdate").datepicker({
-      todayHighlight: true,
-      autoclose: true
+    todayHighlight: true,
+    autoclose: true
   }).on('changeDate', function (selected) {
-      var minDate = new Date(selected.date.valueOf());
-      $('#enddate').datepicker('setStartDate', minDate);
+    var minDate = new Date(selected.date.valueOf());
+    $('#enddate').datepicker('setStartDate', minDate);
   });
 
   $("#enddate").datepicker({
     autoclose: true
   })
-      .on('changeDate', function (selected) {
-          var maxDate = new Date(selected.date.valueOf());
-          $('#startdate').datepicker('setEndDate', maxDate);
-      });
+    .on('changeDate', function (selected) {
+      var maxDate = new Date(selected.date.valueOf());
+      $('#startdate').datepicker('setEndDate', maxDate);
+    });
 
 });
